@@ -21,9 +21,9 @@ def is_enabled(value, default):
 PORT = environ.get("PORT", "8080")
 WEBHOOK = bool(environ.get("WEBHOOK", True)) # for web support on/off
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ('API_ID') "7515868")) 
-API_HASH = environ('API_HASH') "dbd251e9ad4883b0443cc82b618ac6fa")) 
-BOT_TOKEN = environ('BOT_TOKEN') "6372507849:AAFa7dIFPtfCepncAK8PqM6uGB8khT84OY0")) 
+API_ID = int(environ('API_ID') "")) 
+API_HASH = environ('API_HASH') "")) 
+BOT_TOKEN = environ('BOT_TOKEN') "")) 
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -42,8 +42,8 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://suresh44:suresh44@cluster0.l59cqpe.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Aryabro")
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #maximum search result buttos count in number#
